@@ -1,0 +1,351 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:2:1-23:12
+MERGED from [androidx.activity:activity:1.9.3] /home/denis0001-dev/.gradle/caches/8.9/transforms/70812dc20eecff506d07d14fe4e06a64/transformed/activity-1.9.3/AndroidManifest.xml:17:1-22:12
+MERGED from [org.jetbrains.compose.components:components-resources-android:1.7.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/994e11be96035a3f6f3f3ddc3310216a/transformed/library-release/AndroidManifest.xml:2:1-16:12
+MERGED from [tech.annexflow.compose:constraintlayout-compose-multiplatform-android:0.4.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/20aa7f47fb2c52db9fa67080b9d03793/transformed/compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3.adaptive:adaptive-android:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/74165c96d7594226ff6528607497b653/transformed/adaptive-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material3:material3-android:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/051900afaf84765929ff2762b288be63/transformed/material3-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/4c41129026b76e86f102b851b9134d34/transformed/material-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.animation:animation-core-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/5c660dc4c4873ae88e497b2ee6d811e5/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/a24374089f88214aecf6572312828730/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/3b50cf4d39799ca08bb6770ebe30637d/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/1e1d325f5830a1b2b09f198c6dd06a4c/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/b364873d8e897333995fc9cda6f6cb65/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f5cdf6cbd22e8dfc009127d7acf6df70/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/4785cdbc8d9b7de33e032f4528256ac7/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/38d2c81e4ccb64127f4675e2e6096dda/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f5db42b603c361bcbf7f05003a3339fe/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/4120de40c51bd0bfdbe6c947a500bcde/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/88a8c041c4ce08970a9d2859c5a429fb/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/1885eecee211ccfc52ec4449a6b2ee42/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/a6afc9f87757bbb388c6e20d91dbc690/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/3fba5acfd3adbdc2ab774eddefe759f9/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/8565696f8a606c8ce3595cbc0d4f902b/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-ktx:1.9.3] /home/denis0001-dev/.gradle/caches/8.9/transforms/e8f51820eb93e0f285858ea49ab0c611/transformed/activity-ktx-1.9.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-compose:1.9.3] /home/denis0001-dev/.gradle/caches/8.9/transforms/b6e99e17524c8245bbd359ba2df77b98/transformed/activity-compose-1.9.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window-core-android:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/91ada42657ac6c79dd7718a1438b9b7a/transformed/window-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/dadca616d88bfeff562992942d0f8dd9/transformed/window-1.3.0/AndroidManifest.xml:17:1-31:12
+MERGED from [org.jetbrains.compose.components:components-ui-tooling-preview-android:1.7.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/9748c6f677785c0ddc0b75b3a7254151/transformed/library-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/26aaf05e14cfeb52c927555e4e310ad0/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.autofill:autofill:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/9d2dc17faf1d0d585b6c0aebcb0f1ce3/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/00d63f9d68cf4a227264272d542c1d31/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/382ebad1ee0d706c32829d0856fc8860/transformed/core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.graphics:graphics-path:1.0.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/df1a81f3fcfa31e527e63dc8d945fdb8/transformed/graphics-path-1.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/60101e4e6a5bd0290946033f2c0eeda5/transformed/lifecycle-livedata-core-2.8.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/825f7dca0a1a06ed1b2bfb79cc83fa68/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/aed4d1a86254bfc519686a93c731159f/transformed/lifecycle-viewmodel-ktx-2.8.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/9c6d21abc0727631dbed1f22f1d0276d/transformed/lifecycle-process-2.8.5/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/bbaad1dd2295ef4a2d1e11902767d357/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/13639d5fb8415e4ae81fe8ff89d1eaaf/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/4c493d43836b70532ebcdabff5bfc38b/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/bf0c113830fa771b43eb2dc84931eab2/transformed/lifecycle-viewmodel-savedstate-2.8.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/90155fb2ea8b40a7954191d99cab4c50/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/5b1e9684b34458e1eed9b2d46c09a3f2/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.window.extensions.core:core:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/35aa9bf21cbc7193ea02005862aaa5ea/transformed/core-1.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/2699c805c839911307db12add91049aa/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/202f88d763be0500e4a52d0b1d6b22dc/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/4d7246303ab0fdc291e39d4ac9827d6b/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/7f4bfbdcbee874d3ced1ca9e2584bb28/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/be0dedf0d1ee755e032e2460e800c9c4/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f91001bcf34077c4addcc8ba53ae9c6c/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/6e85aaa19571c52d3def2cec83e85f9a/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/f03aa71f7a66323cc4b055e68d9928df/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:4:5-21:19
+INJECTED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:4:5-21:19
+MERGED from [org.jetbrains.compose.components:components-resources-android:1.7.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/994e11be96035a3f6f3f3ddc3310216a/transformed/library-release/AndroidManifest.xml:7:5-14:19
+MERGED from [org.jetbrains.compose.components:components-resources-android:1.7.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/994e11be96035a3f6f3f3ddc3310216a/transformed/library-release/AndroidManifest.xml:7:5-14:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/1885eecee211ccfc52ec4449a6b2ee42/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/1885eecee211ccfc52ec4449a6b2ee42/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.window:window:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/dadca616d88bfeff562992942d0f8dd9/transformed/window-1.3.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.window:window:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/dadca616d88bfeff562992942d0f8dd9/transformed/window-1.3.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/26aaf05e14cfeb52c927555e4e310ad0/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/26aaf05e14cfeb52c927555e4e310ad0/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/9c6d21abc0727631dbed1f22f1d0276d/transformed/lifecycle-process-2.8.5/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/9c6d21abc0727631dbed1f22f1d0276d/transformed/lifecycle-process-2.8.5/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/7f4bfbdcbee874d3ced1ca9e2584bb28/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/7f4bfbdcbee874d3ced1ca9e2584bb28/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f91001bcf34077c4addcc8ba53ae9c6c/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f91001bcf34077c4addcc8ba53ae9c6c/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:9:9-35
+	android:label
+		ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:7:9-41
+	android:roundIcon
+		ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:8:9-54
+	android:icon
+		ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:6:9-43
+	android:allowBackup
+		ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:5:9-35
+	android:theme
+		ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:10:9-72
+activity#ru.morozovit.dncryptor101.MainActivity
+ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:11:9-20:20
+	android:exported
+		ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:12:13-36
+	android:configChanges
+		ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:13:13-225
+	android:name
+		ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:14:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml:18:27-74
+uses-sdk
+INJECTED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml
+INJECTED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml
+MERGED from [androidx.activity:activity:1.9.3] /home/denis0001-dev/.gradle/caches/8.9/transforms/70812dc20eecff506d07d14fe4e06a64/transformed/activity-1.9.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.3] /home/denis0001-dev/.gradle/caches/8.9/transforms/70812dc20eecff506d07d14fe4e06a64/transformed/activity-1.9.3/AndroidManifest.xml:20:5-44
+MERGED from [org.jetbrains.compose.components:components-resources-android:1.7.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/994e11be96035a3f6f3f3ddc3310216a/transformed/library-release/AndroidManifest.xml:5:5-44
+MERGED from [org.jetbrains.compose.components:components-resources-android:1.7.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/994e11be96035a3f6f3f3ddc3310216a/transformed/library-release/AndroidManifest.xml:5:5-44
+MERGED from [tech.annexflow.compose:constraintlayout-compose-multiplatform-android:0.4.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/20aa7f47fb2c52db9fa67080b9d03793/transformed/compose-release/AndroidManifest.xml:5:5-44
+MERGED from [tech.annexflow.compose:constraintlayout-compose-multiplatform-android:0.4.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/20aa7f47fb2c52db9fa67080b9d03793/transformed/compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3.adaptive:adaptive-android:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/74165c96d7594226ff6528607497b653/transformed/adaptive-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3.adaptive:adaptive-android:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/74165c96d7594226ff6528607497b653/transformed/adaptive-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/051900afaf84765929ff2762b288be63/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/051900afaf84765929ff2762b288be63/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/4c41129026b76e86f102b851b9134d34/transformed/material-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material:material:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/4c41129026b76e86f102b851b9134d34/transformed/material-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.animation:animation-core-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/5c660dc4c4873ae88e497b2ee6d811e5/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/5c660dc4c4873ae88e497b2ee6d811e5/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/a24374089f88214aecf6572312828730/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/a24374089f88214aecf6572312828730/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/3b50cf4d39799ca08bb6770ebe30637d/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/3b50cf4d39799ca08bb6770ebe30637d/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/1e1d325f5830a1b2b09f198c6dd06a4c/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/1e1d325f5830a1b2b09f198c6dd06a4c/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/b364873d8e897333995fc9cda6f6cb65/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/b364873d8e897333995fc9cda6f6cb65/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f5cdf6cbd22e8dfc009127d7acf6df70/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f5cdf6cbd22e8dfc009127d7acf6df70/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/4785cdbc8d9b7de33e032f4528256ac7/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/4785cdbc8d9b7de33e032f4528256ac7/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/38d2c81e4ccb64127f4675e2e6096dda/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/38d2c81e4ccb64127f4675e2e6096dda/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f5db42b603c361bcbf7f05003a3339fe/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f5db42b603c361bcbf7f05003a3339fe/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/4120de40c51bd0bfdbe6c947a500bcde/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/4120de40c51bd0bfdbe6c947a500bcde/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/88a8c041c4ce08970a9d2859c5a429fb/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/88a8c041c4ce08970a9d2859c5a429fb/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/1885eecee211ccfc52ec4449a6b2ee42/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/1885eecee211ccfc52ec4449a6b2ee42/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/a6afc9f87757bbb388c6e20d91dbc690/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/a6afc9f87757bbb388c6e20d91dbc690/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/3fba5acfd3adbdc2ab774eddefe759f9/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/3fba5acfd3adbdc2ab774eddefe759f9/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/8565696f8a606c8ce3595cbc0d4f902b/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/8565696f8a606c8ce3595cbc0d4f902b/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.3] /home/denis0001-dev/.gradle/caches/8.9/transforms/e8f51820eb93e0f285858ea49ab0c611/transformed/activity-ktx-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.3] /home/denis0001-dev/.gradle/caches/8.9/transforms/e8f51820eb93e0f285858ea49ab0c611/transformed/activity-ktx-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.3] /home/denis0001-dev/.gradle/caches/8.9/transforms/b6e99e17524c8245bbd359ba2df77b98/transformed/activity-compose-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.3] /home/denis0001-dev/.gradle/caches/8.9/transforms/b6e99e17524c8245bbd359ba2df77b98/transformed/activity-compose-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window-core-android:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/91ada42657ac6c79dd7718a1438b9b7a/transformed/window-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window-core-android:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/91ada42657ac6c79dd7718a1438b9b7a/transformed/window-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/dadca616d88bfeff562992942d0f8dd9/transformed/window-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/dadca616d88bfeff562992942d0f8dd9/transformed/window-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [org.jetbrains.compose.components:components-ui-tooling-preview-android:1.7.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/9748c6f677785c0ddc0b75b3a7254151/transformed/library-release/AndroidManifest.xml:5:5-44
+MERGED from [org.jetbrains.compose.components:components-ui-tooling-preview-android:1.7.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/9748c6f677785c0ddc0b75b3a7254151/transformed/library-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/26aaf05e14cfeb52c927555e4e310ad0/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/26aaf05e14cfeb52c927555e4e310ad0/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/9d2dc17faf1d0d585b6c0aebcb0f1ce3/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/9d2dc17faf1d0d585b6c0aebcb0f1ce3/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/00d63f9d68cf4a227264272d542c1d31/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/00d63f9d68cf4a227264272d542c1d31/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/382ebad1ee0d706c32829d0856fc8860/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/382ebad1ee0d706c32829d0856fc8860/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/df1a81f3fcfa31e527e63dc8d945fdb8/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/df1a81f3fcfa31e527e63dc8d945fdb8/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/60101e4e6a5bd0290946033f2c0eeda5/transformed/lifecycle-livedata-core-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/60101e4e6a5bd0290946033f2c0eeda5/transformed/lifecycle-livedata-core-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/825f7dca0a1a06ed1b2bfb79cc83fa68/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/825f7dca0a1a06ed1b2bfb79cc83fa68/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/aed4d1a86254bfc519686a93c731159f/transformed/lifecycle-viewmodel-ktx-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/aed4d1a86254bfc519686a93c731159f/transformed/lifecycle-viewmodel-ktx-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/9c6d21abc0727631dbed1f22f1d0276d/transformed/lifecycle-process-2.8.5/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/9c6d21abc0727631dbed1f22f1d0276d/transformed/lifecycle-process-2.8.5/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/bbaad1dd2295ef4a2d1e11902767d357/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/bbaad1dd2295ef4a2d1e11902767d357/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/13639d5fb8415e4ae81fe8ff89d1eaaf/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/13639d5fb8415e4ae81fe8ff89d1eaaf/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/4c493d43836b70532ebcdabff5bfc38b/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/4c493d43836b70532ebcdabff5bfc38b/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/bf0c113830fa771b43eb2dc84931eab2/transformed/lifecycle-viewmodel-savedstate-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/bf0c113830fa771b43eb2dc84931eab2/transformed/lifecycle-viewmodel-savedstate-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/90155fb2ea8b40a7954191d99cab4c50/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/90155fb2ea8b40a7954191d99cab4c50/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/5b1e9684b34458e1eed9b2d46c09a3f2/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/5b1e9684b34458e1eed9b2d46c09a3f2/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window.extensions.core:core:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/35aa9bf21cbc7193ea02005862aaa5ea/transformed/core-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window.extensions.core:core:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/35aa9bf21cbc7193ea02005862aaa5ea/transformed/core-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/2699c805c839911307db12add91049aa/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/2699c805c839911307db12add91049aa/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/202f88d763be0500e4a52d0b1d6b22dc/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/202f88d763be0500e4a52d0b1d6b22dc/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/4d7246303ab0fdc291e39d4ac9827d6b/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/4d7246303ab0fdc291e39d4ac9827d6b/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/7f4bfbdcbee874d3ced1ca9e2584bb28/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/7f4bfbdcbee874d3ced1ca9e2584bb28/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/be0dedf0d1ee755e032e2460e800c9c4/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/be0dedf0d1ee755e032e2460e800c9c4/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f91001bcf34077c4addcc8ba53ae9c6c/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f91001bcf34077c4addcc8ba53ae9c6c/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/6e85aaa19571c52d3def2cec83e85f9a/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/6e85aaa19571c52d3def2cec83e85f9a/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/f03aa71f7a66323cc4b055e68d9928df/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/f03aa71f7a66323cc4b055e68d9928df/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/denis0001-dev/AndroidStudioProjects/Dncryptor101 Multiplatform/composeApp/src/androidMain/AndroidManifest.xml
+provider#org.jetbrains.compose.resources.AndroidContextProvider
+ADDED from [org.jetbrains.compose.components:components-resources-android:1.7.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/994e11be96035a3f6f3f3ddc3310216a/transformed/library-release/AndroidManifest.xml:8:9-13:20
+	android:enabled
+		ADDED from [org.jetbrains.compose.components:components-resources-android:1.7.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/994e11be96035a3f6f3f3ddc3310216a/transformed/library-release/AndroidManifest.xml:11:13-35
+	android:authorities
+		ADDED from [org.jetbrains.compose.components:components-resources-android:1.7.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/994e11be96035a3f6f3f3ddc3310216a/transformed/library-release/AndroidManifest.xml:10:13-84
+	android:exported
+		ADDED from [org.jetbrains.compose.components:components-resources-android:1.7.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/994e11be96035a3f6f3f3ddc3310216a/transformed/library-release/AndroidManifest.xml:12:13-37
+	android:name
+		ADDED from [org.jetbrains.compose.components:components-resources-android:1.7.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/994e11be96035a3f6f3f3ddc3310216a/transformed/library-release/AndroidManifest.xml:9:13-82
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/1885eecee211ccfc52ec4449a6b2ee42/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/1885eecee211ccfc52ec4449a6b2ee42/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/1885eecee211ccfc52ec4449a6b2ee42/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/dadca616d88bfeff562992942d0f8dd9/transformed/window-1.3.0/AndroidManifest.xml:23:9-25:40
+	android:required
+		ADDED from [androidx.window:window:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/dadca616d88bfeff562992942d0f8dd9/transformed/window-1.3.0/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.window:window:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/dadca616d88bfeff562992942d0f8dd9/transformed/window-1.3.0/AndroidManifest.xml:24:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/dadca616d88bfeff562992942d0f8dd9/transformed/window-1.3.0/AndroidManifest.xml:26:9-28:40
+	android:required
+		ADDED from [androidx.window:window:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/dadca616d88bfeff562992942d0f8dd9/transformed/window-1.3.0/AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.window:window:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/dadca616d88bfeff562992942d0f8dd9/transformed/window-1.3.0/AndroidManifest.xml:27:13-51
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/26aaf05e14cfeb52c927555e4e310ad0/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/9c6d21abc0727631dbed1f22f1d0276d/transformed/lifecycle-process-2.8.5/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/9c6d21abc0727631dbed1f22f1d0276d/transformed/lifecycle-process-2.8.5/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f91001bcf34077c4addcc8ba53ae9c6c/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f91001bcf34077c4addcc8ba53ae9c6c/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/26aaf05e14cfeb52c927555e4e310ad0/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/26aaf05e14cfeb52c927555e4e310ad0/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/26aaf05e14cfeb52c927555e4e310ad0/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/26aaf05e14cfeb52c927555e4e310ad0/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/26aaf05e14cfeb52c927555e4e310ad0/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/26aaf05e14cfeb52c927555e4e310ad0/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/denis0001-dev/.gradle/caches/8.9/transforms/26aaf05e14cfeb52c927555e4e310ad0/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+permission#ru.morozovit.dncryptor101.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+uses-permission#ru.morozovit.dncryptor101.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/85fed3ab123eed96408a247db16d563e/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/9c6d21abc0727631dbed1f22f1d0276d/transformed/lifecycle-process-2.8.5/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/9c6d21abc0727631dbed1f22f1d0276d/transformed/lifecycle-process-2.8.5/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.5] /home/denis0001-dev/.gradle/caches/8.9/transforms/9c6d21abc0727631dbed1f22f1d0276d/transformed/lifecycle-process-2.8.5/AndroidManifest.xml:30:17-78
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/denis0001-dev/.gradle/caches/8.9/transforms/f9274b0f4688ed084bed578a3bf4fe4e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
