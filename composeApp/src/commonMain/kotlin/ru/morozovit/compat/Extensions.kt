@@ -1,4 +1,4 @@
-@file:Suppress("NOTHING_TO_INLINE", "UnusedReceiverParameter")
+@file:Suppress("NOTHING_TO_INLINE", "UnusedReceiverParameter", "unused")
 @file:JvmName("Extensions")
 
 package ru.morozovit.compat
@@ -6,8 +6,10 @@ package ru.morozovit.compat
 import androidx.compose.material.icons.Icons
 import androidx.compose.material3.ColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.ProvidableCompositionLocal
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ClipboardManager
+import androidx.compose.ui.text.AnnotatedString
 import androidx.constraintlayout.compose.ConstrainScope
 import androidx.constraintlayout.compose.ConstrainedLayoutReference
 import androidx.constraintlayout.compose.ConstraintLayoutBaseScope
@@ -72,3 +74,31 @@ val Icons.Outlined.StopCircle
 
 val Icons.Outlined.ContentPaste
     @Composable get() = vectorResource(Res.drawable.content_paste_outlined)
+
+interface SupportClipboardManager {
+    suspend fun setText(string: String)
+    suspend fun getText(): String?
+    suspend fun hasText(): Boolean = getText()?.isNotEmpty() ?: false
+
+    fun setTextListener(listener: (String) -> Unit)
+}
+
+expect val LocalSupportClipboardManager: ProvidableCompositionLocal<SupportClipboardManager>
+
+expect val supportClipboardManagerImpl: SupportClipboardManager @Composable get
+
+inline fun ClipboardManager.toSupport() = object : SupportClipboardManager {
+    private var listener: ((String) -> Unit)? = null
+
+    override suspend fun setText(string: String) {
+        this@toSupport.setText(string.toAnnotatedString())
+        listener?.invoke(string)
+    }
+    override suspend fun getText() = this@toSupport.getText()?.toString() ?: ""
+
+    override fun setTextListener(listener: (String) -> Unit) {
+        this.listener = listener
+    }
+}
+
+fun String.toAnnotatedString() = AnnotatedString(this)

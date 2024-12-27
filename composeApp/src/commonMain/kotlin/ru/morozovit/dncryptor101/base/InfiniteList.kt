@@ -34,23 +34,6 @@ class InfiniteList<T>(items: List<T>): List<T> {
     override val size: Int get() = Int.MAX_VALUE
 
     override operator fun get(index: Int): T {
-//        if (index >= 0) {
-//            val m = index / backingList.size
-//            val i = backingList.size * m - index
-//            return backingList[i]
-//        } else {
-//            val a = abs(index)
-//            val m = a / backingList.size + backingList.size
-//            val i = m + index
-//            return backingList[i]
-//        }
-
-//        if (index < 0) {
-//            i = (backingList.size + index) % backingList.size
-//        } else if (index >= backingList.size) {
-//            i = (index - backingList.size) % backingList.size
-//        }
-//        return backingList[i]
         return if (index >= 0) {
             sequence.elementAt(index % backingList.size)
         } else {
@@ -75,7 +58,6 @@ class InfiniteList<T>(items: List<T>): List<T> {
     override fun subList(fromIndex: Int, toIndex: Int): MutableList<T> {
         TODO("Not yet implemented")
     }
-
 
     override fun lastIndexOf(element: T) = backingList.lastIndexOf(element)
 

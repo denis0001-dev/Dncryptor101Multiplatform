@@ -10,6 +10,8 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.ProvidableCompositionLocal
+import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -17,6 +19,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
 import androidx.compose.ui.focus.onFocusEvent
+import androidx.compose.ui.platform.LocalClipboardManager
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
 
@@ -63,3 +66,9 @@ actual fun getDynamicColorScheme(darkTheme: Boolean): ColorScheme? {
     }
     return null
 }
+
+actual val LocalSupportClipboardManager: ProvidableCompositionLocal<SupportClipboardManager> = compositionLocalOf {
+    throw IllegalStateException("This CompositionLocal hasn't been provided.")
+}
+actual val supportClipboardManagerImpl: SupportClipboardManager
+    @Composable get() = LocalClipboardManager.current.toSupport()

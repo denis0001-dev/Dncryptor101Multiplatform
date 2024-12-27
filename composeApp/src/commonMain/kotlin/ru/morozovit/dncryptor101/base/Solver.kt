@@ -16,17 +16,27 @@ object Solver {
     }
 
     fun shift(letter: Char, shift: Int): Char {
-        var index = ALPHABET_ENGLISH.indexOf(letter)
+        var index = ALPHABET_ENGLISH.indexOf(letter.lowercaseChar())
         val print: Char
         if (index == -1) {
-            index = ALPHABET_RUSSIAN.indexOf(letter)
+            index = ALPHABET_RUSSIAN.indexOf(letter.lowercaseChar())
             print = if (index == -1) {
                 letter
             } else {
-                ALPHABET_RUSSIAN_SEQ[index + shift]
+                ALPHABET_RUSSIAN_SEQ[index + shift].let {
+                    if (letter.isUpperCase())
+                        it.uppercaseChar()
+                    else
+                        it
+                }
             }
         } else {
-            print = ALPHABET_ENGLISH_SEQ[index + shift]
+            print = ALPHABET_ENGLISH_SEQ[index + shift].let {
+                if (letter.isUpperCase())
+                    it.uppercaseChar()
+                else
+                    it
+            }
         }
         return print
     }

@@ -13,11 +13,14 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalLayoutDirection
+import ru.morozovit.compat.LocalSupportClipboardManager
 import ru.morozovit.compat.dynamicTheme
 import ru.morozovit.compat.getDynamicColorScheme
+import ru.morozovit.compat.supportClipboardManagerImpl
 
 interface WindowInsetsScope {
     val systemBarInsets: WindowInsets
@@ -63,37 +66,41 @@ inline fun AppTheme(
         )
 
         ProvideContextMenuRepresentation(darkTheme) {
-            Surface(
-                contentColor = colorScheme.onSurface,
-                modifier = Modifier.let {
-                    val mod = it.fillMaxSize()
-                    if (consumeWindowInsets) {
-                        mod.consumeWindowInsets(
-                            WindowInsets.navigationBars.only(WindowInsetsSides.Vertical)
-                        )
-                    }
-                    mod
-                }
+            CompositionLocalProvider(
+                LocalSupportClipboardManager provides supportClipboardManagerImpl
             ) {
-                val topInset = insets.getTop(LocalDensity.current)
-                val bottomInset = insets.getBottom(LocalDensity.current)
-                val leftInset = insets.getLeft(LocalDensity.current, LocalLayoutDirection.current)
-                val rightInset = insets.getRight(LocalDensity.current, LocalLayoutDirection.current)
+                Surface(
+                    contentColor = colorScheme.onSurface,
+                    modifier = Modifier.let {
+                        val mod = it.fillMaxSize()
+                        if (consumeWindowInsets) {
+                            mod.consumeWindowInsets(
+                                WindowInsets.navigationBars.only(WindowInsetsSides.Vertical)
+                            )
+                        }
+                        mod
+                    }
+                ) {
+                    val topInset = insets.getTop(LocalDensity.current)
+                    val bottomInset = insets.getBottom(LocalDensity.current)
+                    val leftInset = insets.getLeft(LocalDensity.current, LocalLayoutDirection.current)
+                    val rightInset = insets.getRight(LocalDensity.current, LocalLayoutDirection.current)
 
-                content(object : WindowInsetsScope {
-                    override val systemBarInsets: WindowInsets
-                        get() = insets
-                    override val isWindowInsetsConsumed: Boolean
-                        get() = consumeWindowInsets
-                    override val topInset: Int
-                        get() = topInset
-                    override val bottomInset: Int
-                        get() = bottomInset
-                    override val leftInset: Int
-                        get() = leftInset
-                    override val rightInset: Int
-                        get() = rightInset
-                })
+                    content(object : WindowInsetsScope {
+                        override val systemBarInsets: WindowInsets
+                            get() = insets
+                        override val isWindowInsetsConsumed: Boolean
+                            get() = consumeWindowInsets
+                        override val topInset: Int
+                            get() = topInset
+                        override val bottomInset: Int
+                            get() = bottomInset
+                        override val leftInset: Int
+                            get() = leftInset
+                        override val rightInset: Int
+                            get() = rightInset
+                    })
+                }
             }
         }
     }

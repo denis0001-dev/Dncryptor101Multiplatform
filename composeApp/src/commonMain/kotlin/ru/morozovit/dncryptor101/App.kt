@@ -32,10 +32,15 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.SnackbarHost
+import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.ProvidableCompositionLocal
+import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateMapOf
@@ -48,11 +53,9 @@ import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.onFocusChanged
-import androidx.compose.ui.platform.LocalClipboardManager
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.compose.ui.text.TextRange
-import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.TextFieldValue
@@ -66,6 +69,7 @@ import kotlinx.coroutines.launch
 import ru.morozovit.compat.ContentPaste
 import ru.morozovit.compat.Encrypted
 import ru.morozovit.compat.EncryptedOff
+import ru.morozovit.compat.LocalSupportClipboardManager
 import ru.morozovit.compat.StopCircle
 import ru.morozovit.compat.WindowWidthSizeClass
 import ru.morozovit.compat.clearFocusOnKeyboardDismiss
@@ -76,7 +80,6 @@ import ru.morozovit.compat.link
 import ru.morozovit.compat.plus
 import ru.morozovit.compat.removeNavScrim
 import ru.morozovit.compat.right
-import ru.morozovit.compat.text
 import ru.morozovit.dncryptor101.base.Solver
 import ru.morozovit.dncryptor101.base.Solver.ALPHABET_RUSSIAN
 import ru.morozovit.dncryptor101.ui.AppTheme
@@ -85,6 +88,8 @@ import ru.morozovit.dncryptor101.ui.SimpleNavigationBar
 import ru.morozovit.dncryptor101.ui.SimpleNavigationRail
 import ru.morozovit.dncryptor101.ui.Step
 import kotlin.random.Random
+
+val LocalSnackbar: ProvidableCompositionLocal<SnackbarHostState> = compositionLocalOf { throw NullPointerException() }
 
 @Composable
 inline fun TabBase(
@@ -144,8 +149,18 @@ inline fun TabBase(
 //    showBackground = true
 //)
 inline fun DecryptTab() {
-    val clipboard = LocalClipboardManager.current
-    var clipboardHasText by remember { mutableStateOf(clipboard.hasText()) }
+    val clipboard = LocalSupportClipboardManager.current
+    var clipboardHasText by remember { mutableStateOf(false) }
+    val coroutineScope = rememberCoroutineScope()
+    val snackbar = LocalSnackbar.current
+    coroutineScope.launch {
+        clipboardHasText = clipboard.hasText()
+    }
+    clipboard.setTextListener {
+        coroutineScope.launch {
+            snackbar.showSnackbar("Copied!")
+        }
+    }
 
     var isStopFabVisible by remember { mutableStateOf(false) }
 
@@ -156,7 +171,9 @@ inline fun DecryptTab() {
             .fillMaxSize()
             .onFocusChanged {
                 if (it.hasFocus) {
-                    clipboardHasText = clipboard.hasText()
+                    coroutineScope.launch {
+                        clipboardHasText = clipboard.hasText()
+                    }
                 }
             },
         floatingActionButton = {
@@ -199,8 +216,6 @@ inline fun DecryptTab() {
 
             var isTextInvalid by rememberSaveable { mutableStateOf(true) }
 
-            val coroutineScope = rememberCoroutineScope()
-
             val clearVariants = {
                 variantsVisible = false
                 coroutineScope.launch {
@@ -236,22 +251,25 @@ inline fun DecryptTab() {
                         if (clipboardHasText) {
                             IconButton(
                                 onClick = {
-                                    try {
-                                        if (clipboard.hasText() && clipboard.text != null) {
-                                            val clip: CharSequence =
-                                                clipboard.text!!.toString()
-                                            textToDecrypt = TextFieldValue(
-                                                text = "${textToDecrypt.text}$clip",
-                                                selection = TextRange(
-                                                    textToDecrypt.text.length +
-                                                            clip.length
+                                    coroutineScope.launch {
+                                        try {
+                                            if (clipboard.hasText()) {
+                                                val clip: CharSequence = clipboard.getText()!!
+                                                textToDecrypt = TextFieldValue(
+                                                    text = "${textToDecrypt.text}$clip",
+                                                    selection = TextRange(
+                                                        textToDecrypt.text.length +
+                                                                clip.length
+                                                    )
                                                 )
-                                            )
-                                            isTextInvalid = textToDecrypt.text.isEmpty()
-                                            clearVariants()
+                                                isTextInvalid = textToDecrypt.text.isEmpty()
+                                                clearVariants()
+                                            }
+                                        } catch (_: Exception) {
+                                            coroutineScope.launch {
+                                                snackbar.showSnackbar("Failed to paste text")
+                                            }
                                         }
-                                    } catch (_: Exception) {
-                                        // TODO handle
                                     }
                                 }
                             ) {
@@ -376,9 +394,9 @@ inline fun DecryptTab() {
                             Modifier
                                 .fillMaxWidth()
                                 .clickable {
-                                    clipboard.setText(buildAnnotatedString {
-                                        append(it.key)
-                                    })
+                                    coroutineScope.launch {
+                                        clipboard.setText(it.key)
+                                    }
                                 }
                         ) {
                             Text(
@@ -396,15 +414,28 @@ inline fun DecryptTab() {
 @Composable
 inline fun EncryptTab() {
     val scrollState = rememberScrollState()
-    val clipboard = LocalClipboardManager.current
-    var clipboardHasText by remember { mutableStateOf(clipboard.hasText()) }
+    val coroutineScope = rememberCoroutineScope()
+    val clipboard = LocalSupportClipboardManager.current
+    val snackbar = LocalSnackbar.current
+    var clipboardHasText by remember { mutableStateOf(false) }
+    coroutineScope.launch {
+        clipboardHasText = clipboard.hasText()
+    }
+
+    clipboard.setTextListener {
+        coroutineScope.launch {
+            snackbar.showSnackbar("Copied!")
+        }
+    }
 
     TabBase(
         scrollState = scrollState,
         title = "Encryptor",
         modifier = Modifier.onFocusChanged {
             if (it.hasFocus) {
-                clipboardHasText = clipboard.hasText()
+                coroutineScope.launch {
+                    clipboardHasText = clipboard.hasText()
+                }
             }
         }
     ) {
@@ -430,8 +461,6 @@ inline fun EncryptTab() {
 
         var randomShift by remember { mutableIntStateOf(0) }
 
-        val coroutineScope = rememberCoroutineScope()
-
         Step(
             number = 1,
             title = "Enter the text to encrypt",
@@ -456,21 +485,24 @@ inline fun EncryptTab() {
                     if (clipboardHasText) {
                         IconButton(
                             onClick = {
-                                try {
-                                    if (clipboard.hasText() && clipboard.text != null) {
-                                        val clip: CharSequence =
-                                            clipboard.text!!.toString()
-                                        textToEncrypt = TextFieldValue(
-                                            text = "${textToEncrypt.text}$clip",
-                                            selection = TextRange(
-                                                textToEncrypt.text.length +
-                                                        clip.length
+                                coroutineScope.launch {
+                                    try {
+                                        if (clipboard.hasText()) {
+                                            val clip = clipboard.getText()!!
+                                            textToEncrypt = TextFieldValue(
+                                                text = "${textToEncrypt.text}$clip",
+                                                selection = TextRange(
+                                                    textToEncrypt.text.length +
+                                                            clip.length
+                                                )
                                             )
-                                        )
-                                        isTextInvalid = textToEncrypt.text.isEmpty()
+                                            isTextInvalid = textToEncrypt.text.isEmpty()
+                                        }
+                                    } catch (_: Exception) {
+                                        coroutineScope.launch {
+                                            snackbar.showSnackbar("Failed to paste text")
+                                        }
                                     }
-                                } catch (_: Exception) {
-                                    // TODO handle
                                 }
                             }
                         ) {
@@ -531,15 +563,21 @@ inline fun EncryptTab() {
                     }
                     coroutineScope.launch {
                         delay(250)
-                        encryptedText = Solver.encrypt(
-                            textToEncrypt.text,
-                            shift.text.toIntOrNull() ?: let {
-                                randomShift = Random.nextInt(
-                                    -ALPHABET_RUSSIAN.length, ALPHABET_RUSSIAN.length
-                                )
-                                randomShift
+                        while (true) {
+                            val text = Solver.encrypt(
+                                textToEncrypt.text,
+                                shift.text.toIntOrNull() ?: let {
+                                    randomShift = Random.nextInt(
+                                        -ALPHABET_RUSSIAN.length, ALPHABET_RUSSIAN.length
+                                    )
+                                    randomShift
+                                }
+                            )
+                            if (text != textToEncrypt.text) {
+                                encryptedText = text
+                                break
                             }
-                        )
+                        }
                         encryptedTextVisible = true
                         delay(250)
                         scrollState.animateScrollTo(scrollState.maxValue)
@@ -575,11 +613,9 @@ inline fun EncryptTab() {
                         Modifier
                             .fillMaxWidth()
                             .clickable {
-                                clipboard.setText(
-                                    buildAnnotatedString {
-                                        encryptedText ?: ""
-                                    }
-                                )
+                                coroutineScope.launch {
+                                    clipboard.setText(encryptedText ?: "")
+                                }
                             }
                     ) {
                         Text(
@@ -659,12 +695,21 @@ fun MainScreen() {
                 }
             }
 
-            val pages: @Composable PagerScope.(Int) -> Unit = {
-                when (it) {
-                    0 -> EncryptTab()
-                    1 -> DecryptTab()
-                    // 2 -> SettingsTab()
-                    /* 3 */ 2 -> AboutTab()
+            val pages: @Composable PagerScope.(Int) -> Unit = { page ->
+                val snackbarHostState = remember { SnackbarHostState() }
+                Scaffold(snackbarHost = {
+                    SnackbarHost(hostState = snackbarHostState)
+                }) {
+                    CompositionLocalProvider(
+                        LocalSnackbar provides snackbarHostState
+                    ) {
+                        when (page) {
+                            0 -> EncryptTab()
+                            1 -> DecryptTab()
+                            // 2 -> SettingsTab()
+                            /* 3 */ 2 -> AboutTab()
+                        }
+                    }
                 }
             }
 
