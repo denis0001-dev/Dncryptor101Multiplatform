@@ -659,6 +659,13 @@ inline fun AboutTab() {
             modifier = Modifier.padding(bottom = 10.dp)
         )
         Text(text = "A program for decrypting & encrypting text")
+        Button(
+            onClick = {
+                throw DebugException("Exception for debugging :)")
+            }
+        ) {
+            Text(text = "Throw an exception (developers only)")
+        }
     }
 }
 

@@ -12,3 +12,77 @@ html, body {
         background-color: #141218;
     }
 }
+
+button {
+    height: 40px;
+    border-radius: 20px;
+    background-color: #6750A4;
+    line-height: 20pt;
+    font-size: 14pt;
+    font-weight: 500;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: &quot;Roboto&quot;;
+    color: #FFFFFF;
+    border: none;
+}
+
+#err_overlay {
+    transition: all 0.25s ease-out;
+    transform: scaleX(0.7) scaleY(0.7);
+    opacity: 0;
+    position: fixed;
+    border-radius: 30px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEF7FF;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    #err_wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 40%;
+
+        #err_sad {
+            width: 50px;
+            height: 50px;
+            background-image: url('sad.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
+
+        #err_title {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        #err_code {
+            background-color: #F3EDF7;
+            box-shadow: #a3a3a3 5px 5px 20px;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        #err_refresh {
+            width: min-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+#err_overlay.open {
+    transform: scaleX(1) scaleY(1);
+    opacity: 1;
+    display: flex;
+    border-radius: 0;
+}
