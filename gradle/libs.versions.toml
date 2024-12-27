@@ -1,0 +1,21 @@
+[versions]
+agp = "8.5.0"
+androidx-activityCompose = "1.9.3"
+compose-multiplatform = "1.7.0"
+kotlin = "2.1.0"
+kotlinx-coroutines = "1.9.0"
+constraintlayout = "0.4.0"
+adaptive = "1.0.0"
+
+[libraries]
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
+constraintlayout = { module = "tech.annexflow.compose:constraintlayout-compose-multiplatform", version.ref = "constraintlayout" }
+adaptive = { group = "androidx.compose.material3.adaptive", name = "adaptive-android", version.ref = "adaptive" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
