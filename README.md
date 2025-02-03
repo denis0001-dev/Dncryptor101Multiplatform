@@ -1,18 +1,107 @@
-This is a Kotlin Multiplatform project targeting Android, Web, Desktop.
+# Dncryptor101
+Кроссплатформенное приложение для шифровки и расшифровки текста с помощью шифра Цезаря.
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+## Совместимость
+- Android 6 и выше
+- iOS 15.2 и выше
+- Браузер (не iOS)
 
+## Установка
+### Android
+Примерное время на установку: 5-10 минут
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+1. Скачайте файл **_Dncryptor101-*.apk_** в [последнем релизе](https://github.com/denis0001-dev/Dncryptor101Multiplatform/releases/latest).
+2. Откройте файл.
+3. Если вы получите такое сообщение:
+   
+   > **_имя приложения, из которого открыли файл_**
+   > 
+   > В целях безопасности ваш телефон блокирует установку неизвестных приложений из этого источника.
+   > Этот параметр можно изменить в настройках.
+   > 
+   > **Отмена Настройки**
+   
+   1. Нажмите **Настройки**.
+   2. Включите **Разрешить установку из этого источника**.
+4. Нажмите **Установить**.
+5. Если появится такое сообщение:
+   > **Google Play Защита**
+   >
+   > ## Рекомендуется проверка приложения
+   > **Dncryptor101 Multiplatform**
+   >
+   > Play Защита никогда не проверяла это приложение. Отправьте его в Google
+   > для сканирования на угрозы, чтобы защитить своё устройство и данные.
+   >
+   > **Подробнее**
+   >
+   > ---
+   > **Проверить**
+   >
+   > **Не устанавливать**
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
+   1. Нажмите **Проверить** и дождитесь окончания процесса.
+   2. Когда увидите **_Судя по всему, приложение безопасное_**, нажмите **Установить**.
+6. После завершения процесса нажмите **Открыть**.
+7. Готово!
+### Веб-страница
+Веб версия находится по адресу https://denis0001-dev.github.io/Dncryptor101Multiplatform.
+### iOS
+Примерное время на установку: 20-30 минут
+#### Mac
+##### Необходимые файлы (скачайте все)
+- [Dncryptor101-*.ipa](https://github.com/denis0001-dev/Dncryptor101Multiplatform/releases/latest)
+- [AltServer](https://cdn.altstore.io/file/altstore/altserver.zip)
+- [SideStore.ipa](https://github.com/sidestore/releases/latest/download/sidestore.ipa)
+- [JitterbugPair](https://github.com/osy/Jitterbug/releases/download/v1.3.1/Jitterbugpair-macos.zip)
+- [Конфигурация WireGuard](https://github.com/sidestore/sidestore/releases/download/0.1.1/sidestore.conf)
 
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+##### Требования
+- Mac с macOS 10.15 и новее
+- Apple ID
+- Подключение к интернету
+- iPhone или iPad с iOS/iPadOS 14 и новее
+
+##### Установка SideStore
+1. Распакуйте `altserver.zip`.
+2. Перетащите AltServer в папку **Программы**.
+3. Откройте AltServer нажатием правой кнопки мыши и нажатием **Открыть**.
+4. Нажмите **ОК** или что-то похожее если появится предупреждение.
+5. Подключите ваше устройство к компьютеру через кабель.
+6. Доверяйте этому компьютеру, если устройство спросит.
+7. Если ваше устройство работает на iOS/iPadOS 16 или новее:
+   1. Откройте **Настройки** > **Конфеденциальность и безопасность**.
+   2. Прокрутите вниз и включите режим разработчика.
+9. Держа клавишу `Option` нажатой, нажмите на иконку AltServer в верхнем правом углу и выберите **Sideload .ipa**.
+10. Выберите **SideStore.ipa**.
+11. После того, как на устройстве появится **SideStore**, откройте **Настройки** > **Основные** > **VPN и управление устройством** и доверяйте приложением от вашего Apple ID.
+12. Распакуйте `Jitterbugpair.zip`.
+13. Перейдите на домашний экран.
+14. Запустите Jitterbugpair.
+15. Если Jitterbugpair скажет что-то вроде:
+    
+    ```
+    ERROR: Please accept the trust dialog on the screen of device xxx, then attempt to pair again.
+    ```
+    то нужно нажать **Доверять** на устройстве и запустить программу еще раз.
+17. Откройте **Finder** и нажмите `Command` + `Shift` + `G`.
+18. Введите **_~_** и нажмите `Enter`.
+19. Найдите файл с расширение`.mobiledevicepairing` и сожмите его.
+20. Переместите архив на ваше устройство.
+21. Распакуйте архив.
+22. Откройте **SideStore** и нажмите **OK** в появившемся диалоговом окне.
+23. Выберите файл с расширением `.mobiledevicepairing`.
+24. Установите **WireGuard** из **App Store**.
+25. Перенесите файл `sidestore.conf` на ваше устройство.
+26. Поделитесь этим файлом с **WireGuard**.
+27. Не забудьте включить этот туннель!
+##### Установка Dncryptor101
+1. Перенесите `Dncryptor101-*.ipa` на устройство.
+2. Откройте **SideStore**.
+3. Нажмите **My Apps**.
+4. Нажмите **+** в левом верхнем углу.
+5. Выберите `Dncryptor101-*.ipa` в файлах устройства.
+6. Если SideStore попросит вас авторизоваться через Apple ID - не бойтесь, это безопасно. Введите ваш Apple ID и пароль.
+7. После этого, через некоторое время должна появиться иконка приложения.
+#### Windows
+_Инструкция в разработке._
